@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #tv_div .tv_class {
+      color: red;
+    }
+
+    ul li {
+      list-style-type: none;
+    }
+
+    .tv_class #tv_id {
+      color: gold;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 
+层级选择器 有上下级的选择器 
+   -->
+
+  <div id="tv_div">
+    <div class="tv_class">111112</div>
+    <div class="tv_class">222211</div>
+    <div class="tv_class01">331221</div>
+  </div>
+  <ul>
+    <li>篮球</li>
+    <li>足球</li>
+    <li>羽毛球</li>
+  </ul>
+  <div class="tv_class">
+    <div id="tv_id">
+      海王
+      <span>
+        <div id="tv_id">
+          股神
+        </div>
+      </span>
+    </div>
+    <div id="tv_id01">酒神</div>
+    <div id="tv_id01">睡神</div>
+
+  </div>
+</body>
+
+</html>
