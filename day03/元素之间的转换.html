@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+
+/* 1.在html中将元素分为三类:行元素 块元素 行块元素
+2.块元素:不根据内容来进行填充 独占一行 例如:div p
+3.行元素:根据内容来进行填充 不是独占一行 例如:<span> <font>
+4.行块元素:既有行元素的特征又有块元素的特征 不是独占一行 但是可以设置其宽度 例如;img
+textarea
+5.三种元素之间的相互转换
+ */
+    div {
+      border: solid red 1px;
+      /* display: none; */
+      /* display: inline-block; */
+      /* display: inline; */
+      /* display: block; */
+      width: 400px;
+    }
+    span {
+      border: solid red 2px;
+      /* display: block; */
+      /* display: inline-block; */
+      /* display: none; */
+      width: 400px;
+    }
+    img{
+      border: solid 1px red;
+    }
+  </style>
+</head>
+
+<body>
+  <div>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
+  <br />
+  <span>aaa</span>
+  <br />
+  <img src="img/img-1.png" alt="" />
+  <span>xxx回来xxxx</span>
+</body>
+
+</html>
