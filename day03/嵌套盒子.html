@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 两个盒子进行嵌套的时候 给小盒子设置magrin值 
+    
+      问题 :大盒子会随着子盒子往下进行移动 父容器塌陷问题    
+      
+      解决:    在大盒子中设置    overflow: hidden; 解决
+    */
+    #tv_div01{
+      width: 400px; 
+      height: 400px;
+      background-color: blue;
+      /* overflow: hidden; */
+    }
+    #tv_div02{
+      width: 200px;
+      height: 200px;
+      background-color: yellow;
+      /* 设置margin值 */
+      margin-top: 30px;
+
+    }
+  </style>
+</head>
+<body>
+  <div id="tv_div01">
+    <div id="tv_div02"></div>
+  </div>
+</body>
+</html>
