@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input[type=text]{
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <span>数值1:</span>
+  <input type="text" class="num">
+  <br>  
+  <span>数值2:</span>
+  <input type="text" class="num">
+  <br>  
+  <span>数值3:</span>
+  <input type="text" class="num">
+  <br>  
+  <span>最大值:</span>
+  <input type="text">
+  <br>  
+  <input type="button" value="计算最大值" onclick="getMax()">
+  <script>
+    function getMax() {
+   
+      const classNames=document.querySelectorAll("input[type='text']")
+      console.log(classNames);
+      var max=Number(classNames[0].value)
+      for (let i = 0; i < classNames.length; i++) {
+        const element = classNames[i];
+    
+        if (i==classNames.length-1) {
+          element.value=max
+          break
+        }
+        if (element.value>max) {
+          max=Number(element.value)
+        }
+    
+      }
+      
+
+
+    }
+  </script>
+
+
+</body>
+
+</html>
