@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button id="tv_btn">设置事件</button>
+  <button id="tv_btn01">移除事件</button>
+  <div id="tv_msg">
+    油价上涨
+  </div>
+  <div id="tv_msg1">毛哥被抓</div>
+  <script>
+    document.getElementById('tv_btn').onclick = function () {
+      document.getElementById('tv_msg').addEventListener("click", showInfo)
+      document.getElementById('tv_msg').addEventListener("mouseover", showInfo01)
+      document.getElementById('tv_msg').addEventListener("mouseout", showInfo02)
+    }
+    document.getElementById("tv_btn01").onclick = function () {
+  
+        document.getElementById('tv_msg').removeEventListener("click", showInfo)
+      
+    }
+
+
+    function showInfo() {
+      alert("Hello")
+    }
+    function showInfo01() {
+      console.log(22222);
+    }
+    function showInfo02() {
+      console.log(333333333333);
+    }
+  </script>
+</body>
+
+</html>
