@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="button"   value="点击" name="" id="" onclick="alert('您好')">
+  <select name="" id="" onchange="alert('条目发生了改变')">
+    <option value="">球王</option>
+    <option value="">海王</option>
+    <option value="">嫖王</option>
+  </select>
+  <p onmouseover="show()" onmouseout="showInfo()">今天约了吗</p>
+  <form action="作业02.html" method="get" id="tv_but">
+    <input type="text"/>
+    <input type="button" onclick="show01()" value="提交form表单" />
+  </form>
+  <script>
+    // 页面加载完成触发的时间
+    window.onload=function(){
+      alert('页面雏形已经加载完毕了')
+    }
+      function show() {
+        console.log("鼠标移入");
+      }
+      function showInfo() {
+        console.log('鼠标移出');
+      }
+      function show01(){
+        document.getElementById('tv_but').submit()
+      }
+  </script>
+</body>
+</html>
