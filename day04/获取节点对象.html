@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="button" onclick="show01()" value="根据id来进行获取">
+  <input type="button" onclick="show02()" value="根据class来进行获取">
+  <input type="button" onclick="show03()" value="根据tag来进行获取">
+  <input type="button" onclick="show04()" value="根据name来进行获取">
+  <input type="text" id="tv_uname" onclick="show04()" value="根据id来进行获取">
+  <p>
+    <input type="checkbox" class="tv_class" value="喝酒"> 喝酒
+    <input type="checkbox" class="tv_class" value="烫头"> 烫头
+    <input type="checkbox" class="tv_class" value="抽烟"> 抽烟
+  </p>
+  <p>
+    <input type="radio" name="sex" value="男" />男
+    <input type="radio" name="sex" value="女" />女
+    <input type="radio" name="sex" value="泰国" />泰国
+  </p>
+  <script>
+    function show01() {
+      // 根据id来获取节点对象
+      var tv_name = document.getElementById('tv_uname')
+      alert(tv_name.value)
+    }
+    function show02() {
+      var arrs = document.getElementsByClassName("tv_class")
+      // for( i in arrs){
+      // console.log(i);
+      // const value= arrs[i].value
+      // alert(value)
+      // console.log(value);
+      // }
+      for (let i = 0; i < arrs.length; i++) {
+        const value = arrs[i].value
+        console.log(value);
+      }
+
+    }
+    function show03() {
+      var arrs = document.getElementsByTagName("input")
+      for (let i = 0; i < arrs.length; i++) {
+        const value = arrs[i].value
+        console.log(value);
+      }
+    }
+    function show04() {
+      var arrs = document.getElementsByName("sex")
+      for (let i = 0; i < arrs.length; i++) {
+        const value = arrs[i].value
+        console.log(value);
+      }
+    }
+  </script>
+</body>
+
+</html>
