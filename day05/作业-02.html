@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <span>书名:</span>
+  <input type="text">
+  <br>
+  <span>作者:</span>
+  <input type="text">
+  <br>
+  <span>价格:</span>
+  <input type="text" id="price">
+  <br>
+  <span>折扣:</span>
+  <input type="text" id="discount">
+  <br>
+  <input type="button" value="计算折扣价" onclick="cal()">
+  <br>
+  <span id="cal_price"></span>
+  <script>
+    function cal() {
+
+      const price=document.getElementById("price").value
+      const discount=document.getElementById("discount").value
+      if (price&&discount) {
+      const displayEl= document.getElementById('cal_price')
+      displayEl.innerText=price*discount
+      }
+
+    }
+  </script>
+</body>
+</html>
