@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var stu={
+      uid:1001,
+      uname:'你好',
+      upwd:"aasdasa"
+    }
+    // 表示在网页上输出
+    document.write(stu.uid)
+    document.write('<br/>')
+    document.write(stu.uname)
+    document.write('<br/>')
+    document.write(stu.upwd)
+    // 定义一个数组
+    var stus =[
+      {
+        uid:1003,
+        uname:'雷洛',
+        upwd:"aasdasgbaba"
+      },
+      {
+        uid:1004,
+        uname:'洛克',
+        upwd:"aasdaasdsa"
+      }
+    ]
+    document.write(stus[0].uid)
+    document.write('<br/>')
+    document.write(stus[0].uname)
+    document.write('<br/>')
+    var st =[
+      {
+        uid:1003,
+        uname:'雷洛',
+        upwd:"aasdasgbaba"
+      },
+      {
+        pid:1004,
+        pname:'洛克',
+        ppwd:"aasdaasdsa"
+      }
+    ]
+    document.write(st[1].pid)
+    document.write('<br/>')
+    document.write(st[1].pname)
+  </script>
+</body>
+</html>
