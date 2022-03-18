@@ -1,82 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    *{
+    * {
       list-style-type: none;
       margin: 0px;
       padding: 0px;
     }
-    .left{
+
+    .left {
       float: left;
       height: 40px;
-      background-color:#333333;
+      background-color: #333333;
     }
-    .left a:link{
+
+    .left a {
       font-size: 12px;
       color: white;
       text-decoration: none;
       line-height: 40px;
       margin-left: 75px;
     }
-    .left a:hover{
-        color: orange;
+
+    .left a:hover {
+      color: orange;
     }
-    .right{
+
+    .right {
       float: right;
     }
-    .right li{
+
+    .right li {
       float: left;
     }
-    .right a:link{
+
+    .right a {
       font-size: 12px;
       color: white;
       text-decoration: none;
       line-height: 40px;
       padding: 10px;
     }
-    .box{
+
+    .box {
       width: 100%;
       height: 40px;
       background-color: #333333;
     }
-    .box_search{
+
+    .box_search {
+      margin: 0 auto;
       padding: 10px;
-      width: 100%;
+      width: 80%;
       height: 60px;
-      border: solid 1px red;
+      /* border: solid 1px red; */
     }
-    .nav ul li{
+
+    .nav ul li {
       margin-left: 8px;
       font-size: 14px;
       line-height: 60px;
       float: left;
       /* display: inline-block; */
     }
-    .nav ul li a{
+
+    .nav ul li a {
       text-decoration: none;
       color: black;
     }
-    .edit_search{
+
+    .edit_search {
       line-height: 60px;
-      border: solid 1px red;
+      /* border: solid 1px red; */
       float: right;
+      padding-right: 20px;
+
     }
-    .logo_left{
+
+    .logo_left {
+      width: 800px;
       padding-right: 30px;
       padding-left: 10px;
       float: left;
     }
 
+    .lunbo_left {
+      width: 234px;
+      height: 420px;
+      display: inline-block;
+      background-color: #a2a0a0;
+      overflow: hidden;
+      padding: 10px;
+    }
+
+    .lunbo_left a {
+      text-decoration: none;
+      color: white;
+    }
+    .lunbo{
+      margin: 0 auto;
+      width: 80%;
+    }
+    .lunbo_left li {
+
+
+      padding-top: 10px;
+    }
+
+    .lunbo_right {
+      padding: 0;
+      border: solid #e8e8e8 1px;
+      width: 800px;
+      height: 440px;
+      display: inline-block;
     
+    }
+    .lunbo_right img{
+      width: 1226px;
+      height: 440px;
+      
+    }
   </style>
 
 
 </head>
+
 <body>
   <!-- 小米导航栏 -->
   <div class="box">
@@ -94,10 +147,10 @@
 
     </div>
   </div>
-<!-- 小米搜索框 -->
+  <!-- 小米搜索框 -->
   <div class="box_search">
     <div class="logo_left">
-        <img src="img/logo.png" alt="">
+      <img src="img/logo.png" alt="">
     </div>
     <div class="nav">
 
@@ -115,9 +168,34 @@
       </ul>
     </div>
     <div class="edit_search">
-          <input type="text">
-          <button>搜搜</button>
+      <input type="text">
+      <button>搜搜</button>
     </div>
   </div>
+    <div style="clear: both;">
+
+    </div>
+    <!-- 轮播 -->
+    <div class="lunbo">
+      <div class="lunbo_left">
+        <ul>
+          <li><a href="#">手机</a></li>
+          <li><a href="#">电视</a></li>
+          <li><a href="#">笔记本 平板</a></li>
+          <li><a href="#">家电</a></li>
+          <li><a href="#">出行 穿戴</a></li>
+          <li><a href="#">智能 路由器</a></li>
+          <li><a href="#">电源 配件</a></li>
+          <li><a href="#">健康 儿童</a></li>
+          <li><a href="#">耳机 音箱</a></li>
+          <li><a href="#">生活 箱包</a></li>
+        </ul>
+      </div>
+      <div class="lunbo_right">
+          <img src="img/lunbo.webp" alt="">
+      </div>
+    </div>
+  
 </body>
+
 </html>
