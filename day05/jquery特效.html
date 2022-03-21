@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <style>
+    div{
+      width: 200px;
+      height: 200px;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <input type="button" value="显示" id="tv_show">
+  <input type="button" value="隐藏" id="tv_hide">
+  <input type="button" value="显示隐藏" id="tv_show_hide">
+  <div></div>
+</body>
+<script>
+  $('#tv_hide').click(function(){
+  $("div").hide(5000,function () {
+    // alert('11111')
+  })
+  
+  // 淡入
+  // $('div').fadeOut(5000)
+  // 淡出
+  // $('div').fadeIn(5000)
+  // 淡入或淡出
+  // $('div').fadeToggle(5000)
+  // 向上收缩
+  // $('div').slideUp(5000)
+  // 向上收缩 或 向下扩展
+  // $('div').slideToggle(5000)
+  })
+
+  $('#tv_show').click(function () {
+    $("div").show(5000,function () {
+  })
+  })
+  $('#tv_show_hide').click(function () {
+    $("div").toggle(5000,function () {
+  })
+  })
+</script>
+</html>
