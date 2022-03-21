@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="作业-01.html" method="get" onsubmit="return checkedLogin()">
+    <div style="color: red;" id="tv_msg"> </div>
+    <p>用户名: <input type="text" id="tv_uname" ></p>
+    <p>用户名: <input type="text" id="tv_upwd" ></p>
+    <p>用户名: <input type="submit" value="登录" onclick="checkedLogin()">
+    </p>
+  </form>
+  <script>
+    function checkedLogin() {
+        // 根据id来获取对象
+        const uname=document.getElementById('tv_uname').value
+        const upwd=document.getElementById('tv_upwd').value
+        const tv_msg=document.getElementById('tv_msg')
+        if (!uname) {
+          tv_msg.innerHTML='用户名不能为空!'
+          return false;
+        } 
+        if (!upwd) {
+          tv_msg.innerHTML='密码不能为空!'
+          return false;  
+        }
+        return true
+
+
+
+    }
+  </script>
+</body>
+
+</html>
