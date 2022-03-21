@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <style>
+    h2 {
+      background-color: #333333;
+    }
+  </style>
+</head>
+
+<body>
+  <input type="button" value="点击01" id="tv_but01">
+  <p>昆明飞往广州</p>
+  <input type="text" id="tv_u"></input>
+  <h3>我现在想睡觉</h3>
+  <script>
+    $('#tv_but01').click(function () {
+      alert('点击事件')
+    })
+    $('#tv_but01').dblclick(function () {
+      alert('双击')
+    })
+    $('#tv_but01').mouseout(function () {
+      console.log('移出')
+    }).mouseover(function () {
+      console.log('移入')
+    })
+    $('#tv_u').blur(function () {
+      $(this).css({
+        'background-color': "red"
+      })
+    }).focus(function () {
+      $(this).css({
+        'background-color': "white"
+      })
+    })
+    $('h3').hover(function () {
+      console.log("睡吧");
+    }, function () {
+      console.log("不睡");
+    })
+  </script>
+</body>
+
+</html>
