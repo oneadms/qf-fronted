@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    td{
+      text-align: center;
+    }
+    th{
+      width: 200px;
+    }
+    div{
+      margin-left: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <input type="button" value="全选" onclick="selectAll()">
+    <input type="button" value="全不选" onclick="selectNot()">
+    <input type="button" value="反选" onclick="selectOr()">
+  </div>
+  <table border="1" cellspacing='0px' cellpadding='0px'>
+    <tr>
+      <th>选择</th>
+      <th>编号</th>
+      <th>姓名</th>
+      <th>爱好</th>
+    </tr>
+    <tr>
+      <td><input type="checkbox"  /></td>
+      <td>1001</td>
+      <td>卢本伟</td>
+      <td>爱好卡布奇诺</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" /></td>
+      <td>1002</td>
+      <td>耀杨</td>
+      <td>爱好砸键盘</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" /></td>
+      <td>1003</td>
+      <td>王力宏</td>
+      <td>爱好嫖娼</td>
+    </tr>
+    <tr><td><input type="checkbox" /></td>
+      <td>1004</td>
+      <td>吴亦凡</td>
+      <td>爱好大碗宽面</td>
+    </tr>
+  </table>
+  <script>
+    function selectAll() {
+      const checkeds=document.querySelectorAll('input[type=checkbox]')
+      for (const checkbox of checkeds) {
+        checkbox.checked=true
+      }
+
+    }
+    function selectNot() {
+      const checkeds=document.querySelectorAll('input[type=checkbox]')
+      for (const checkbox of checkeds) {
+        checkbox.checked=false
+      }
+    }
+    function selectOr() {
+      const checkeds=document.querySelectorAll('input[type=checkbox]')
+      for (const checkbox of checkeds) {
+        checkbox.checked=!checkbox.checked
+      }
+    }
+  </script>
+</body>
+</html>
