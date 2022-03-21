@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="tv_div">
+    <p>你好</p>
+    <p>早上好呀</p>
+  </div>
+  <input type="button" value="添加节点" onclick="addChildElement()">
+  <input type="button" value="删除节点" onclick="removeElement()">
+  <script>
+   const div=document.getElementById("tv_div")
+    function addChildElement() {
+      
+    const  pTag=document.createElement('p')
+    pTag.appendChild(document.createTextNode('你在教我做事啊?'))
+    div.appendChild(pTag)
+    }
+    function removeElement() {
+      // div.removeChild(div.lastChild)
+      div.removeChild(div.children[div.children.length-1])
+    }
+  </script>
+</body>
+</html>
