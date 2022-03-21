@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <select onchange="showCitys(this.value)">
+    <option >请选择</option>
+    <option value="0" >上海市</option>
+    <option value="1">北京市</option>
+    <option value="2">广州市</option>
+
+  </select>
+  <select  id="tv_select">
+
+  </select>
+  <script>
+    function showCitys(temp){
+        if(temp==='请选择'){
+          document.getElementById('tv_select').innerHTML=""  
+          return;
+        }
+        
+        var arrays=[["名媛区","富婆区","红灯区"],["朝阳区","大兴区","海淀区"],["白云区","天河区","黄埔区"]];
+        var citys=arrays[temp]
+        var t="";
+        
+        for (const city of citys) {
+          t+='<option>'+city+'</option>'  
+        }
+        document.getElementById('tv_select').innerHTML=t
+    }
+  </script>
+</body>
+
+</html>
