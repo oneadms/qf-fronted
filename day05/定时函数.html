@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="button" value="开启Interval" onclick="show01()">
+  <br>
+  <input type="button" value="关闭Interval" onclick="show02()">
+  <br>
+  <input type="button" value="开启Timeout"  onclick="show03()">
+  <br>
+  <input type="button" value="关闭Timeout"  onclick="show04()">
+  <script>
+    var interval=null;
+    var timer=null;
+      function show01() {
+        interval= setInterval(()=>{
+          alert('你被罚钱200')
+        },2000)
+      }
+      function show02() {
+        clearInterval(interval)
+      }
+      function show03() {
+        timer=setTimeout(()=>{
+          alert('奖励你200')
+        },2000)
+      }
+      function show04() {
+        clearTimeout(timer)
+      }
+  </script>
+</body>
+</html>
