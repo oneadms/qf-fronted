@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="tv_div"></div>
+  <input type="button" value="点击跳转" onclick="show01()">
+  <input type="button" value="点击跳转"  onclick="show02()">
+  <script>
+    function showInfo() {
+      var s='<p>'+window.location.hostname+'</p>';
+      s+='<p>'+window.location.pathname+'</p>';
+      s+='<p>'+window.location.port+'</p>';
+      s+='<p>'+window.location.protocol+'</p>';
+      s+='<p>'+window.location.href+'</p>';
+      document.getElementById('tv_div').innerHTML=s
+    }
+    showInfo()
+    function show01() {
+      window.location.href='作业-01.html'
+    }
+    function show02() {
+      window.location.assign('https://www.baidu.com')
+      
+    }
+  </script>
+</body>
+</html>
