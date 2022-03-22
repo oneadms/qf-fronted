@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <style>
+    	.getClass{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+			}
+  </style>
+</head>
+<body>
+  <input type="button" id="tv_but01" value="添加" />
+  <input type="button" id="tv_but02" value="删除" />
+  <input type="button" id="tv_but03" value="删除与添加" />
+  <div></div>
+  <script>
+		$("#tv_but01").click(function(){
+				$("div").addClass("getClass");
+			});
+			$("#tv_but02").click(function(){
+				$("div").removeClass("getClass");
+			});
+			
+			$("#tv_but03").click(function(){
+				$("div").toggleClass("getClass");
+			});
+			
+  </script>
+</body>
+</html>
