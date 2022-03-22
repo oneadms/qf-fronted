@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <input type="button" value="点击01" onclick="show01()">
+  <input type="text" id="tv_uname">
+  <input type="checkbox" id="tv_check" value="槟榔">槟榔
+  <div id="tv_div"><span>xxx睡着了</span></div>
+  <img src="img/1.png" alt="">
+  <script>
+    function show01() {
+      // 获取相对路径
+      // alert($('img').attr('src','img/2.jpg'))
+      // 获取绝对路径
+      // alert($('img').prop('src','img/2.jpg'))
+      // alert($('#tv_div').html("<span>起来嗨呀</span>"))
+      // $('#tv_div').text("<span>起来嗨呀</span>")
+      // $('#tv_uname').val( "起来嗨呀")
+        alert($('#tv_uname').val())
+    }
+
+  </script>
+</body>
+
+</html>
