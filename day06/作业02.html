@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <table width='80%' border="1px" align="center">
+    <th>编号</th>
+    <th>姓名</th>
+    <th>爱好</th>
+    <tr class="tr_class">
+      <td>1001</td>
+      <td>小黑</td>
+      <td>小白</td>
+    </tr>
+    <tr class="tr_class">
+      <td>1001</td>
+      <td>小黑</td>
+      <td>小白</td>
+    </tr>
+    <tr class="tr_class">
+      <td>1001</td>
+      <td>小黑</td>
+      <td>小白</td>
+    </tr>
+    <tr class="tr_class">
+      <td>1001</td>
+      <td>小黑</td>
+      <td>小白</td>
+    </tr>
+    <tr class="tr_class">
+      <td>1001</td>
+      <td>小黑</td>
+      <td>小白</td>
+    </tr>
+    <tr class="tr_class">
+      <td>1001</td>
+      <td>小黑</td>
+      <td>小白</td>
+    </tr>
+  </table>
+  <script>
+    var flag = false
+    $(function () {
+      // const trs = $('.tr_class')
+      // for (const tr of trs) {
+      //   if (flag) {
+
+      //     $(tr).css({
+      //       'background-color': 'red'
+      //     })
+      //   }
+      //   flag = !flag
+      // }
+      $('.tr_class').toArray().forEach((item, index) => {
+        if (flag) {
+          $(item).css({
+            'background-color': 'red'
+          })
+        }
+        flag = !flag
+      })
+
+
+
+    })
+  </script>
+</body>
+
+</html>
